@@ -2,7 +2,7 @@
 data.raw <- read.csv("household_power_consumption.txt", header = T, 
                      sep = ";", na.strings = "?", nrows = 2075259)
 
-# Convert as Data
+# Convert as Date
 data.raw$Date <- as.Date(data.raw$Date, format = "%d/%m/%Y")
 
 # Subsetting the data
